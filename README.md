@@ -1,4 +1,4 @@
-# Reality-Signed Legal Approval
+# r0 - Reality Signature Infrastructure
 
 > **This system provides cryptographic attestation of approval events under explicit trust assumptions. It does not assert legal identity or enforceability.**
 
@@ -381,6 +381,9 @@ src/
     │   ├── memory-store.ts           # In-memory storage (V0)
     │   └── file-store.ts             # Document file storage
     └── types.ts                      # TypeScript interfaces
+
+cli/
+└── verify.ts                         # Standalone CLI verifier (no server required)
 ```
 
 ---
