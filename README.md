@@ -483,6 +483,12 @@ See [THREAT_MODEL.md](./THREAT_MODEL.md) for:
 - Explicit out-of-scope attacks
 - Verification checklist for auditors
 
+See [VERIFY.md](./VERIFY.md) for:
+- Step-by-step verification guide
+- What verification proves and does not prove
+- Legal interpretation guidance
+- Common failure cases
+
 ---
 
 ## License
