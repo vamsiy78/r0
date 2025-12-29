@@ -43,6 +43,52 @@ npm run dev
 
 ---
 
+## Standalone Verifier (No Server Required)
+
+Verify any Reality Signature independently:
+
+```bash
+npx ts-node cli/verify.ts <document> <signature.json>
+```
+
+Example:
+```bash
+npx ts-node cli/verify.ts contract.pdf signature.json
+```
+
+Output:
+```
+============================================================
+  r0 VERIFICATION RESULT
+============================================================
+
+  ✅ PASS - Approval is valid
+
+  CHECKS:
+    Document Integrity:  ✓ PASS
+    Signature Validity:  ✓ PASS
+    Format Valid:        ✓ PASS
+
+  DETAILS:
+    Approver ID:    user-123
+    Approver Name:  John Doe
+    Timestamp:      2025-12-29T10:07:50.884Z
+    Intent:         Approve MSA with ACME Corp
+    AI Used:        No
+
+============================================================
+  TRUST ASSUMPTIONS:
+  - Document integrity verified (SHA-256)
+  - Signature authenticity verified (Ed25519)
+  - Identity is system-asserted, not externally verified
+  - This does not prove legal enforceability
+============================================================
+```
+
+The verifier is completely standalone - it does not require the r0 server to be running.
+
+---
+
 ## API Reference
 
 ### 1. Create Approval Session
